@@ -1,0 +1,29 @@
+{
+    "projectName": "Compensations",
+    "username": "gabriel.arce@salesforce.com",
+    "id": "88824580-755c-11e8-891c-3fb080897bc3",
+    "namespace": "",
+    "orgType": "developer",
+    "loginUrl": "https://login.salesforce.com/",
+    "instanceUrl": "https://na53.salesforce.com",
+    "workspace": "C:\\Users\\garce\\Documents",
+    "subscription": [
+        "ApexClass",
+        "ApexComponent",
+        "ApexPage",
+        "ApexTrigger",
+        "AppMenu",
+        "ApprovalProcess",
+        "CustomApplication",
+        "CustomObject",
+        "Dashboard",
+        "EmailTemplate",
+        "HomePageComponent",
+        "HomePageLayout",
+        "Profile",
+        "Report",
+        "ReportType",
+        "StaticResource",
+        "Workflow"
+    ]
+}

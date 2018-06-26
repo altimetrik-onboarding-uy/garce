@@ -1,0 +1,9 @@
+Dear {!NullValue(User, "Sir or Madam")}, 
+
+This Compensation was approved. 
+
+Compensation Name: {!Compensation__c.Name} 
+Employee: {!Compensation.Contact}
+Description: {!Compensation__c.Description__c} 
+Office: {!Compensation__c.Office__c} 
+Status: {!Compensation__c.Status__c}
