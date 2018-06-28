@@ -1,0 +1,90 @@
+43.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+17:50:42.0 (107744)|USER_INFO|[EXTERNAL]|005f2000008Qgef|gabriel.arce@salesforce.com|Argentine Time|GMT-03:00
+17:50:42.0 (144594)|EXECUTION_STARTED
+17:50:42.0 (148433)|CODE_UNIT_STARTED|[EXTERNAL]|Aura
+17:50:42.0 (803595)|HEAP_ALLOCATE|[72]|Bytes:3
+17:50:42.0 (848756)|HEAP_ALLOCATE|[77]|Bytes:152
+17:50:42.0 (869147)|HEAP_ALLOCATE|[342]|Bytes:408
+17:50:42.0 (886720)|HEAP_ALLOCATE|[355]|Bytes:408
+17:50:42.0 (898356)|HEAP_ALLOCATE|[467]|Bytes:48
+17:50:42.0 (922301)|HEAP_ALLOCATE|[139]|Bytes:6
+17:50:42.0 (943926)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:18
+17:50:42.0 (952072)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:18
+17:50:42.0 (1003940)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:6
+17:50:42.0 (1010405)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:6
+17:50:42.0 (1854859)|CODE_UNIT_STARTED|[EXTERNAL]|01pf2000002PUqf|CompensationsController.getCompensations(String, String)
+17:50:42.0 (1938580)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:7
+17:50:42.0 (1945791)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:50:42.0 (1955581)|METHOD_ENTRY|[1]|01pf2000002PUqf|CompensationsController.CompensationsController()
+17:50:42.0 (1961795)|STATEMENT_EXECUTE|[1]
+17:50:42.0 (1967112)|STATEMENT_EXECUTE|[1]
+17:50:42.0 (1998486)|HEAP_ALLOCATE|[50]|Bytes:5
+17:50:42.0 (2023297)|HEAP_ALLOCATE|[56]|Bytes:5
+17:50:42.0 (2032171)|HEAP_ALLOCATE|[64]|Bytes:7
+17:50:42.0 (2062065)|SYSTEM_MODE_ENTER|false
+17:50:42.0 (2074274)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+17:50:42.0 (2085419)|SYSTEM_MODE_EXIT|false
+17:50:42.0 (2095984)|METHOD_EXIT|[1]|CompensationsController
+17:50:42.0 (2101504)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:18
+17:50:42.0 (2110748)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:6
+17:50:42.0 (2122433)|SYSTEM_MODE_ENTER|false
+17:50:42.0 (2131181)|VARIABLE_SCOPE_BEGIN|[5]|contactRecordId|String|false|false
+17:50:42.0 (2168900)|VARIABLE_ASSIGNMENT|[5]|contactRecordId|"003f200002PxJqDAAV"
+17:50:42.0 (2175018)|VARIABLE_SCOPE_BEGIN|[5]|recordType|String|false|false
+17:50:42.0 (2187877)|VARIABLE_ASSIGNMENT|[5]|recordType|"Salary"
+17:50:42.0 (2202182)|HEAP_ALLOCATE|[7]|Bytes:5
+17:50:42.0 (2207240)|STATEMENT_EXECUTE|[5]
+17:50:42.0 (2209213)|STATEMENT_EXECUTE|[7]
+17:50:42.0 (2212234)|HEAP_ALLOCATE|[7]|Bytes:1
+17:50:42.0 (2225826)|HEAP_ALLOCATE|[7]|Bytes:25
+17:50:42.0 (2268878)|USER_DEBUG|[7]|DEBUG|003f200002PxJqDAAV Salary
+17:50:42.0 (2288128)|STATEMENT_EXECUTE|[9]
+17:50:42.0 (2291032)|HEAP_ALLOCATE|[9]|Bytes:171
+17:50:42.0 (2297490)|VARIABLE_SCOPE_BEGIN|[9]|squery|String|false|false
+17:50:42.0 (2322808)|VARIABLE_ASSIGNMENT|[9]|squery|"SELECT Id, Name, Con (151 more) ..."
+17:50:42.0 (2329582)|STATEMENT_EXECUTE|[10]
+17:50:42.0 (2331327)|STATEMENT_EXECUTE|[11]
+17:50:42.0 (2334358)|HEAP_ALLOCATE|[11]|Bytes:21
+17:50:42.0 (2338634)|HEAP_ALLOCATE|[11]|Bytes:1
+17:50:42.0 (2344616)|HEAP_ALLOCATE|[11]|Bytes:40
+17:50:42.0 (2352386)|HEAP_ALLOCATE|[11]|Bytes:211
+17:50:42.0 (2365489)|VARIABLE_ASSIGNMENT|[11]|squery|"SELECT Id, Name, Con (191 more) ..."
+17:50:42.0 (2370933)|HEAP_ALLOCATE|[12]|Bytes:3
+17:50:42.0 (2389518)|STATEMENT_EXECUTE|[12]
+17:50:42.0 (2391315)|STATEMENT_EXECUTE|[13]
+17:50:42.0 (2393580)|HEAP_ALLOCATE|[13]|Bytes:31
+17:50:42.0 (2399185)|HEAP_ALLOCATE|[13]|Bytes:38
+17:50:42.0 (2404211)|HEAP_ALLOCATE|[13]|Bytes:249
+17:50:42.0 (2411939)|VARIABLE_ASSIGNMENT|[13]|squery|"SELECT Id, Name, Con (229 more) ..."
+17:50:42.0 (2416582)|STATEMENT_EXECUTE|[20]
+17:50:42.0 (2428958)|USER_DEBUG|[20]|DEBUG|SELECT Id, Name, Contact__r.Name,Contact__r.Birthdate,Job_Category__c,RecordType.DeveloperName,Amount__c,Location__c,Office__c,Submitted__c,Status__C FROM Compensation__c where contact__r.id='003f200002PxJqDAAV' and RecordType.DeveloperName='Salary'
+17:50:42.0 (2439173)|STATEMENT_EXECUTE|[21]
+17:50:42.0 (3244415)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Name, Contact__r.Name,Contact__r.Birthdate,Job_Category__c,RecordType.DeveloperName,Amount__c,Location__c,Office__c,Submitted__c,Status__C FROM Compensation__c where contact__r.id='003f200002PxJqDAAV' and RecordType.DeveloperName='Salary'
+17:50:42.0 (10479875)|SOQL_EXECUTE_END|[21]|Rows:2
+17:50:42.0 (10506982)|HEAP_ALLOCATE|[21]|Bytes:12
+17:50:42.0 (10547211)|HEAP_ALLOCATE|[21]|Bytes:643
+17:50:42.0 (10627739)|HEAP_ALLOCATE|[21]|Bytes:12
+17:50:42.0 (10655977)|VARIABLE_SCOPE_BEGIN|[21]|returnList|List<Compensation__c>|true|false
+17:50:42.0 (10772951)|VARIABLE_ASSIGNMENT|[21]|returnList|[{"Id":"a06f200000XDMs0AAH","Name":"Compensation Iniesta","Contact__c":"003f200002PxJqDAAV","Job_Category__c":"Junior","RecordTypeId":"012f2000000qOpwAAE","Location__c":"India","Office__c":"Chennai","Submitted__c":true,"Status__c":"NOT SUBMITTED","Contact__r":{"Name":"Andres Iniesta","Birthdate":"1988-05-23T00:00:00.000Z","Id":"003f200002PxJqDAAV"},"RecordType":{"DeveloperName":"Salary","Id":"012f2000000qOpwAAE"}},{"Id":"a06f200000XDVJRAA5","Name":"Nuevita","Contact__c":"003f200002PxJqDAAV","Job_Category__c":"Senior","RecordTypeId":"012f2000000qOpwAAE","Amount__c":"100","Location__c":"US","Office__c":"Michigan","Submitted__c":false,"Status__c":"NOT SUBMITTED","Contact__r":{"Name":"Andres Iniesta","Birthdate":"1988-05-23T00:00:00.000Z","Id":"003f200002PxJqDAAV"},"RecordType":{"DeveloperName":"Salary","Id":"012f2000000qOpwAAE"}}]|0x36fbb700
+17:50:42.0 (10797119)|STATEMENT_EXECUTE|[25]
+17:50:42.0 (10808241)|SYSTEM_MODE_EXIT|false
+17:50:42.10 (10833667)|CUMULATIVE_LIMIT_USAGE
+17:50:42.10 (10833667)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:50:42.10 (10833667)|CUMULATIVE_LIMIT_USAGE_END
+
+17:50:42.0 (10864178)|CODE_UNIT_FINISHED|CompensationsController.getCompensations(String, String)
+17:50:42.0 (11012730)|CODE_UNIT_FINISHED|Aura
+17:50:42.0 (12121432)|EXECUTION_FINISHED

@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
+        <members>CompensationsController</members>
+        <members>TestCompesantionController</members>
+        <members>TestDataFactory</members>
+        <members>TestTriggerCompensation</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
         <members>*</members>
         <name>ApprovalProcess</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>AuraDefinitionBundle</name>
     </types>
     <types>
         <members>Compensations</members>
@@ -13,25 +28,39 @@
         <name>CustomObject</name>
     </types>
     <types>
+        <members>Compensation__c</members>
+        <members>Employee_Compensations</members>
+        <members>Employees_Compensation_s</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
         <members>Folder</members>
         <members>Folder/yqIHMGYbwHdPTGMATUpBDcIosodjJz</members>
         <name>Dashboard</name>
     </types>
     <types>
         <members>unfiled$public/Compensation_Approval</members>
-        <members>unfiled$public/Compensation_Approved</members>
         <members>unfiled$public/Compensation_Rejected</members>
         <members>unfiled$public/New_Compensation</members>
         <name>EmailTemplate</name>
     </types>
     <types>
-        <members>Manager Custom</members>
-        <name>Profile</name>
+        <members>*</members>
+        <name>Flow</name>
     </types>
     <types>
-        <members>unfiled$public</members>
-        <members>unfiled$public/New_Compensations_Report_utY</members>
-        <name>Report</name>
+        <members>*</members>
+        <name>HomePageComponent</name>
+    </types>
+    <types>
+        <members>Compensation__c-Compensation Layout</members>
+        <members>Compensation__c-Salary Layout</members>
+        <members>Compensation__c-Study Layout</members>
+        <members>Contact-Contact %28Marketing%29 Layout</members>
+        <members>Contact-Contact %28Sales%29 Layout</members>
+        <members>Contact-Contact %28Support%29 Layout</members>
+        <members>Contact-Contact Layout</members>
+        <name>Layout</name>
     </types>
     <types>
         <members>Compensation__c</members>

@@ -1,1 +1,121 @@
-[]
+[
+    {
+        "attributes": {
+            "type": "AuraDefinition",
+            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Adf2000000uFTnCAM"
+        },
+        "Id": "0Adf2000000uFTnCAM",
+        "AuraDefinitionBundleId": "0Abf2000000b44zCAA",
+        "AuraDefinitionBundle": {
+            "attributes": {
+                "type": "AuraDefinitionBundle",
+                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Abf2000000b44zCAA"
+            },
+            "DeveloperName": "CompensationsTab"
+        },
+        "DefType": "COMPONENT",
+        "Format": "XML"
+    },
+    {
+        "attributes": {
+            "type": "AuraDefinition",
+            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Adf2000000uGC6CAM"
+        },
+        "Id": "0Adf2000000uGC6CAM",
+        "AuraDefinitionBundleId": "0Abf2000000b44zCAA",
+        "AuraDefinitionBundle": {
+            "attributes": {
+                "type": "AuraDefinitionBundle",
+                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Abf2000000b44zCAA"
+            },
+            "DeveloperName": "CompensationsTab"
+        },
+        "DefType": "HELPER",
+        "Format": "JS"
+    },
+    {
+        "attributes": {
+            "type": "AuraDefinition",
+            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Adf2000000uFUHCA2"
+        },
+        "Id": "0Adf2000000uFUHCA2",
+        "AuraDefinitionBundleId": "0Abf2000000b44zCAA",
+        "AuraDefinitionBundle": {
+            "attributes": {
+                "type": "AuraDefinitionBundle",
+                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Abf2000000b44zCAA"
+            },
+            "DeveloperName": "CompensationsTab"
+        },
+        "DefType": "CONTROLLER",
+        "Format": "JS"
+    },
+    {
+        "attributes": {
+            "type": "AuraDefinition",
+            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Adf2000000uFUWCA2"
+        },
+        "Id": "0Adf2000000uFUWCA2",
+        "AuraDefinitionBundleId": "0Abf2000000b45OCAQ",
+        "AuraDefinitionBundle": {
+            "attributes": {
+                "type": "AuraDefinitionBundle",
+                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Abf2000000b45OCAQ"
+            },
+            "DeveloperName": "CompensationsApp"
+        },
+        "DefType": "APPLICATION",
+        "Format": "XML"
+    },
+    {
+        "attributes": {
+            "type": "AuraDefinition",
+            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Adf2000000uFbYCAU"
+        },
+        "Id": "0Adf2000000uFbYCAU",
+        "AuraDefinitionBundleId": "0Abf2000000b48XCAQ",
+        "AuraDefinitionBundle": {
+            "attributes": {
+                "type": "AuraDefinitionBundle",
+                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Abf2000000b48XCAQ"
+            },
+            "DeveloperName": "compensationEdit"
+        },
+        "DefType": "COMPONENT",
+        "Format": "XML"
+    },
+    {
+        "attributes": {
+            "type": "AuraDefinition",
+            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Adf2000000uGBwCAM"
+        },
+        "Id": "0Adf2000000uGBwCAM",
+        "AuraDefinitionBundleId": "0Abf2000000b48XCAQ",
+        "AuraDefinitionBundle": {
+            "attributes": {
+                "type": "AuraDefinitionBundle",
+                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Abf2000000b48XCAQ"
+            },
+            "DeveloperName": "compensationEdit"
+        },
+        "DefType": "HELPER",
+        "Format": "JS"
+    },
+    {
+        "attributes": {
+            "type": "AuraDefinition",
+            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Adf2000000uG7ZCAU"
+        },
+        "Id": "0Adf2000000uG7ZCAU",
+        "AuraDefinitionBundleId": "0Abf2000000b48XCAQ",
+        "AuraDefinitionBundle": {
+            "attributes": {
+                "type": "AuraDefinitionBundle",
+                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Abf2000000b48XCAQ"
+            },
+            "DeveloperName": "compensationEdit"
+        },
+        "DefType": "CONTROLLER",
+        "Format": "JS"
+    }
+]

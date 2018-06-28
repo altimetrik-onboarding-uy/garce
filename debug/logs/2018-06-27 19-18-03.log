@@ -1,0 +1,266 @@
+43.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+19:18:01.0 (378921)|USER_INFO|[EXTERNAL]|005f2000008Qgef|gabriel.arce@salesforce.com|Argentine Time|GMT-03:00
+19:18:01.0 (435323)|EXECUTION_STARTED
+19:18:01.0 (440264)|CODE_UNIT_STARTED|[EXTERNAL]|01pf2000002ParU|TestTriggerCompensation.TestDeleteSubmittedCompensation()
+19:18:01.0 (698859)|HEAP_ALLOCATE|[72]|Bytes:3
+19:18:01.0 (751835)|HEAP_ALLOCATE|[77]|Bytes:152
+19:18:01.0 (767708)|HEAP_ALLOCATE|[342]|Bytes:408
+19:18:01.0 (781291)|HEAP_ALLOCATE|[355]|Bytes:408
+19:18:01.0 (794858)|HEAP_ALLOCATE|[467]|Bytes:48
+19:18:01.0 (823217)|HEAP_ALLOCATE|[139]|Bytes:6
+19:18:01.0 (839426)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:83
+19:18:01.0 (893238)|METHOD_ENTRY|[2]|01pf2000002ParU|TestTriggerCompensation.TestTriggerCompensation()
+19:18:01.0 (902083)|STATEMENT_EXECUTE|[2]
+19:18:01.0 (906335)|STATEMENT_EXECUTE|[2]
+19:18:01.0 (918882)|METHOD_EXIT|[2]|TestTriggerCompensation
+19:18:01.0 (1068637)|HEAP_ALLOCATE|[50]|Bytes:5
+19:18:01.0 (1094230)|HEAP_ALLOCATE|[56]|Bytes:5
+19:18:01.0 (1103240)|HEAP_ALLOCATE|[64]|Bytes:7
+19:18:01.0 (1146308)|STATEMENT_EXECUTE|[43]
+19:18:01.0 (1148546)|STATEMENT_EXECUTE|[45]
+19:18:01.0 (1151754)|HEAP_ALLOCATE|[45]|Bytes:81
+19:18:01.0 (1171147)|HEAP_ALLOCATE|[45]|Bytes:4
+19:18:01.0 (1461380)|SOQL_EXECUTE_BEGIN|[45]|Aggregations:0|SELECT id, Submitted__c, Status__c FROM Compensation__c WHERE Submitted__c = TRUE
+19:18:01.0 (6162870)|SOQL_EXECUTE_END|[45]|Rows:0
+19:18:01.0 (6215099)|HEAP_ALLOCATE|[45]|Bytes:4
+19:18:01.0 (6236466)|HEAP_ALLOCATE|[45]|Bytes:0
+19:18:01.0 (6390417)|HEAP_ALLOCATE|[45]|Bytes:4
+19:18:01.0 (6415521)|VARIABLE_SCOPE_BEGIN|[45]|compensations|List<Compensation__c>|true|false
+19:18:01.0 (6623959)|VARIABLE_ASSIGNMENT|[45]|compensations|[]|0x5908724d
+19:18:01.0 (6634522)|STATEMENT_EXECUTE|[48]
+19:18:01.0 (6673528)|HEAP_ALLOCATE|[48]|Bytes:70
+19:18:01.0 (6693316)|SYSTEM_METHOD_ENTRY|[1]|Test.Test()
+19:18:01.0 (6697963)|STATEMENT_EXECUTE|[1]
+19:18:01.0 (6708727)|SYSTEM_METHOD_EXIT|[1]|Test
+19:18:01.0 (6753345)|METHOD_ENTRY|[48]||System.Test.startTest()
+19:18:01.0 (8143628)|METHOD_EXIT|[48]||System.Test.startTest()
+19:18:01.0 (8166418)|STATEMENT_EXECUTE|[50]
+19:18:01.0 (8328826)|HEAP_ALLOCATE|[50]|Bytes:31
+19:18:01.0 (8425954)|FATAL_ERROR|System.ListException: List index out of bounds: 0
+
+Class.TestTriggerCompensation.TestDeleteSubmittedCompensation: line 50, column 1
+19:18:01.0 (8443508)|FATAL_ERROR|System.ListException: List index out of bounds: 0
+
+Class.TestTriggerCompensation.TestDeleteSubmittedCompensation: line 50, column 1
+19:18:01.8 (8450302)|CUMULATIVE_LIMIT_USAGE
+19:18:01.8 (8450302)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+19:18:01.8 (8450302)|TESTING_LIMITS
+19:18:01.8 (8450302)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+19:18:01.8 (8450302)|CUMULATIVE_LIMIT_USAGE_END
+
+19:18:01.0 (8496366)|CODE_UNIT_FINISHED|TestTriggerCompensation.TestDeleteSubmittedCompensation()
+19:18:01.0 (9267445)|EXECUTION_FINISHED
+19:18:01.30 (30452484)|USER_INFO|[EXTERNAL]|005f2000008Qgef|gabriel.arce@salesforce.com|Argentine Time|GMT-03:00
+19:18:01.30 (30475728)|EXECUTION_STARTED
+19:18:01.30 (30481237)|CODE_UNIT_STARTED|[EXTERNAL]|01pf2000002ParU|TestTriggerCompensation.TestDeleteunSubmittedCompensation()
+19:18:01.30 (30627590)|HEAP_ALLOCATE|[72]|Bytes:3
+19:18:01.30 (30657951)|HEAP_ALLOCATE|[77]|Bytes:152
+19:18:01.30 (30675111)|HEAP_ALLOCATE|[342]|Bytes:408
+19:18:01.30 (30688803)|HEAP_ALLOCATE|[355]|Bytes:408
+19:18:01.30 (30699878)|HEAP_ALLOCATE|[467]|Bytes:48
+19:18:01.30 (30724969)|HEAP_ALLOCATE|[139]|Bytes:6
+19:18:01.30 (30741032)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:83
+19:18:01.30 (30752119)|METHOD_ENTRY|[2]|01pf2000002ParU|TestTriggerCompensation.TestTriggerCompensation()
+19:18:01.30 (30757910)|STATEMENT_EXECUTE|[2]
+19:18:01.30 (30762306)|STATEMENT_EXECUTE|[2]
+19:18:01.30 (30766804)|METHOD_EXIT|[2]|TestTriggerCompensation
+19:18:01.30 (30864057)|HEAP_ALLOCATE|[50]|Bytes:5
+19:18:01.30 (30883614)|HEAP_ALLOCATE|[56]|Bytes:5
+19:18:01.30 (30894322)|HEAP_ALLOCATE|[64]|Bytes:7
+19:18:01.30 (30933890)|STATEMENT_EXECUTE|[63]
+19:18:01.30 (30936095)|STATEMENT_EXECUTE|[65]
+19:18:01.30 (30939178)|HEAP_ALLOCATE|[65]|Bytes:81
+19:18:01.30 (30954123)|HEAP_ALLOCATE|[65]|Bytes:4
+19:18:01.30 (31172250)|SOQL_EXECUTE_BEGIN|[65]|Aggregations:0|SELECT id, Submitted__c, Status__c FROM Compensation__c WHERE Submitted__c = TRUE
+19:18:01.30 (33429655)|SOQL_EXECUTE_END|[65]|Rows:0
+19:18:01.30 (33453698)|HEAP_ALLOCATE|[65]|Bytes:4
+19:18:01.30 (33464424)|HEAP_ALLOCATE|[65]|Bytes:0
+19:18:01.30 (33496220)|HEAP_ALLOCATE|[65]|Bytes:4
+19:18:01.30 (33508454)|VARIABLE_SCOPE_BEGIN|[65]|compensations|List<Compensation__c>|true|false
+19:18:01.30 (33537335)|VARIABLE_ASSIGNMENT|[65]|compensations|[]|0x3f4cb60c
+19:18:01.30 (33544065)|STATEMENT_EXECUTE|[67]
+19:18:01.30 (33558814)|HEAP_ALLOCATE|[67]|Bytes:70
+19:18:01.30 (33570684)|SYSTEM_METHOD_ENTRY|[1]|Test.Test()
+19:18:01.30 (33574382)|STATEMENT_EXECUTE|[1]
+19:18:01.30 (33580725)|SYSTEM_METHOD_EXIT|[1]|Test
+19:18:01.30 (33593922)|METHOD_ENTRY|[67]||System.Test.startTest()
+19:18:01.30 (35061707)|METHOD_EXIT|[67]||System.Test.startTest()
+19:18:01.30 (35072067)|STATEMENT_EXECUTE|[69]
+19:18:01.30 (35157868)|HEAP_ALLOCATE|[69]|Bytes:31
+19:18:01.30 (35297172)|FATAL_ERROR|System.ListException: List index out of bounds: 0
+
+Class.TestTriggerCompensation.TestDeleteunSubmittedCompensation: line 69, column 1
+19:18:01.30 (35309613)|FATAL_ERROR|System.ListException: List index out of bounds: 0
+
+Class.TestTriggerCompensation.TestDeleteunSubmittedCompensation: line 69, column 1
+19:18:01.35 (35315802)|CUMULATIVE_LIMIT_USAGE
+19:18:01.35 (35315802)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+19:18:01.35 (35315802)|TESTING_LIMITS
+19:18:01.35 (35315802)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+19:18:01.35 (35315802)|CUMULATIVE_LIMIT_USAGE_END
+
+19:18:01.30 (35357678)|CODE_UNIT_FINISHED|TestTriggerCompensation.TestDeleteunSubmittedCompensation()
+19:18:01.30 (36407656)|EXECUTION_FINISHED
+19:18:01.46 (46465316)|USER_INFO|[EXTERNAL]|005f2000008Qgef|gabriel.arce@salesforce.com|Argentine Time|GMT-03:00
+19:18:01.46 (46483341)|EXECUTION_STARTED
+19:18:01.46 (46487199)|CODE_UNIT_STARTED|[EXTERNAL]|01pf2000002ParU|TestTriggerCompensation.TestModifySubmittedCompensation()
+19:18:01.46 (46624517)|HEAP_ALLOCATE|[72]|Bytes:3
+19:18:01.46 (46651942)|HEAP_ALLOCATE|[77]|Bytes:152
+19:18:01.46 (46666310)|HEAP_ALLOCATE|[342]|Bytes:408
+19:18:01.46 (46682006)|HEAP_ALLOCATE|[355]|Bytes:408
+19:18:01.46 (46693304)|HEAP_ALLOCATE|[467]|Bytes:48
+19:18:01.46 (46716801)|HEAP_ALLOCATE|[139]|Bytes:6
+19:18:01.46 (46732876)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:83
+19:18:01.46 (46742407)|METHOD_ENTRY|[2]|01pf2000002ParU|TestTriggerCompensation.TestTriggerCompensation()
+19:18:01.46 (46747990)|STATEMENT_EXECUTE|[2]
+19:18:01.46 (46752010)|STATEMENT_EXECUTE|[2]
+19:18:01.46 (46755505)|METHOD_EXIT|[2]|TestTriggerCompensation
+19:18:01.46 (46907950)|HEAP_ALLOCATE|[50]|Bytes:5
+19:18:01.46 (46933472)|HEAP_ALLOCATE|[56]|Bytes:5
+19:18:01.46 (46942754)|HEAP_ALLOCATE|[64]|Bytes:7
+19:18:01.46 (46984209)|STATEMENT_EXECUTE|[4]
+19:18:01.46 (46986656)|STATEMENT_EXECUTE|[6]
+19:18:01.46 (46989498)|HEAP_ALLOCATE|[6]|Bytes:81
+19:18:01.46 (47004461)|HEAP_ALLOCATE|[6]|Bytes:4
+19:18:01.46 (47195909)|SOQL_EXECUTE_BEGIN|[6]|Aggregations:0|SELECT id, Submitted__c, Status__c FROM Compensation__c WHERE Submitted__c = TRUE
+19:18:01.46 (48434571)|SOQL_EXECUTE_END|[6]|Rows:0
+19:18:01.46 (48458386)|HEAP_ALLOCATE|[6]|Bytes:4
+19:18:01.46 (48469533)|HEAP_ALLOCATE|[6]|Bytes:0
+19:18:01.46 (48504668)|HEAP_ALLOCATE|[6]|Bytes:4
+19:18:01.46 (48515332)|VARIABLE_SCOPE_BEGIN|[6]|compensations|List<Compensation__c>|true|false
+19:18:01.46 (48544498)|VARIABLE_ASSIGNMENT|[6]|compensations|[]|0x6690b92d
+19:18:01.46 (48551329)|STATEMENT_EXECUTE|[7]
+19:18:01.46 (48627186)|HEAP_ALLOCATE|[7]|Bytes:31
+19:18:01.46 (48718167)|FATAL_ERROR|System.ListException: List index out of bounds: 0
+
+Class.TestTriggerCompensation.TestModifySubmittedCompensation: line 7, column 1
+19:18:01.46 (48732142)|FATAL_ERROR|System.ListException: List index out of bounds: 0
+
+Class.TestTriggerCompensation.TestModifySubmittedCompensation: line 7, column 1
+19:18:01.48 (48738082)|CUMULATIVE_LIMIT_USAGE
+19:18:01.48 (48738082)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+19:18:01.48 (48738082)|CUMULATIVE_LIMIT_USAGE_END
+
+19:18:01.46 (48767015)|CODE_UNIT_FINISHED|TestTriggerCompensation.TestModifySubmittedCompensation()
+19:18:01.46 (49571361)|EXECUTION_FINISHED
+19:18:01.59 (59588802)|USER_INFO|[EXTERNAL]|005f2000008Qgef|gabriel.arce@salesforce.com|Argentine Time|GMT-03:00
+19:18:01.59 (59607072)|EXECUTION_STARTED
+19:18:01.59 (59610801)|CODE_UNIT_STARTED|[EXTERNAL]|01pf2000002ParU|TestTriggerCompensation.TestModifyunSubmittedCompensation()
+19:18:01.59 (59727731)|HEAP_ALLOCATE|[72]|Bytes:3
+19:18:01.59 (59751941)|HEAP_ALLOCATE|[77]|Bytes:152
+19:18:01.59 (59768186)|HEAP_ALLOCATE|[342]|Bytes:408
+19:18:01.59 (59781717)|HEAP_ALLOCATE|[355]|Bytes:408
+19:18:01.59 (59792730)|HEAP_ALLOCATE|[467]|Bytes:48
+19:18:01.59 (59815823)|HEAP_ALLOCATE|[139]|Bytes:6
+19:18:01.59 (59830353)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:83
+19:18:01.59 (59838820)|METHOD_ENTRY|[2]|01pf2000002ParU|TestTriggerCompensation.TestTriggerCompensation()
+19:18:01.59 (59845007)|STATEMENT_EXECUTE|[2]
+19:18:01.59 (59848850)|STATEMENT_EXECUTE|[2]
+19:18:01.59 (59853355)|METHOD_EXIT|[2]|TestTriggerCompensation
+19:18:01.59 (59939696)|HEAP_ALLOCATE|[50]|Bytes:5
+19:18:01.59 (59983071)|HEAP_ALLOCATE|[56]|Bytes:5
+19:18:01.59 (60001264)|HEAP_ALLOCATE|[64]|Bytes:7
+19:18:01.59 (60042917)|STATEMENT_EXECUTE|[25]
+19:18:01.59 (60045233)|STATEMENT_EXECUTE|[27]
+19:18:01.59 (60059809)|HEAP_ALLOCATE|[27]|Bytes:82
+19:18:01.59 (60075364)|HEAP_ALLOCATE|[27]|Bytes:4
+19:18:01.59 (60253924)|SOQL_EXECUTE_BEGIN|[27]|Aggregations:0|SELECT id, Submitted__c, Status__c FROM Compensation__c WHERE Submitted__c = FALSE
+19:18:01.59 (62498466)|SOQL_EXECUTE_END|[27]|Rows:0
+19:18:01.59 (62523424)|HEAP_ALLOCATE|[27]|Bytes:4
+19:18:01.59 (62535375)|HEAP_ALLOCATE|[27]|Bytes:0
+19:18:01.59 (62567985)|HEAP_ALLOCATE|[27]|Bytes:4
+19:18:01.59 (62579266)|VARIABLE_SCOPE_BEGIN|[27]|compensations|List<Compensation__c>|true|false
+19:18:01.59 (62609651)|VARIABLE_ASSIGNMENT|[27]|compensations|[]|0x36165364
+19:18:01.59 (62616622)|STATEMENT_EXECUTE|[28]
+19:18:01.59 (62620304)|HEAP_ALLOCATE|[28]|Bytes:6
+19:18:01.59 (62698932)|HEAP_ALLOCATE|[28]|Bytes:31
+19:18:01.59 (62787112)|FATAL_ERROR|System.ListException: List index out of bounds: 0
+
+Class.TestTriggerCompensation.TestModifyunSubmittedCompensation: line 28, column 1
+19:18:01.59 (62799263)|FATAL_ERROR|System.ListException: List index out of bounds: 0
+
+Class.TestTriggerCompensation.TestModifyunSubmittedCompensation: line 28, column 1
+19:18:01.62 (62804550)|CUMULATIVE_LIMIT_USAGE
+19:18:01.62 (62804550)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+19:18:01.62 (62804550)|CUMULATIVE_LIMIT_USAGE_END
+
+19:18:01.59 (62834631)|CODE_UNIT_FINISHED|TestTriggerCompensation.TestModifyunSubmittedCompensation()
+19:18:01.59 (63615660)|EXECUTION_FINISHED

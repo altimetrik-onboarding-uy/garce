@@ -1,0 +1,82 @@
+43.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+17:49:53.0 (82747)|USER_INFO|[EXTERNAL]|005f2000008Qgef|gabriel.arce@salesforce.com|Argentine Time|GMT-03:00
+17:49:53.0 (118282)|EXECUTION_STARTED
+17:49:53.0 (122849)|CODE_UNIT_STARTED|[EXTERNAL]|Aura
+17:49:53.0 (800710)|HEAP_ALLOCATE|[72]|Bytes:3
+17:49:53.0 (858769)|HEAP_ALLOCATE|[77]|Bytes:152
+17:49:53.0 (888001)|HEAP_ALLOCATE|[342]|Bytes:408
+17:49:53.0 (909277)|HEAP_ALLOCATE|[355]|Bytes:408
+17:49:53.0 (922995)|HEAP_ALLOCATE|[467]|Bytes:48
+17:49:53.0 (954437)|HEAP_ALLOCATE|[139]|Bytes:6
+17:49:53.0 (977443)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+17:49:53.0 (985994)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+17:49:53.0 (2048385)|CODE_UNIT_STARTED|[EXTERNAL]|01pf2000002PUqf|CompensationsController.getCompensations(String, String)
+17:49:53.0 (2170751)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:7
+17:49:53.0 (2181589)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:49:53.0 (2196480)|METHOD_ENTRY|[1]|01pf2000002PUqf|CompensationsController.CompensationsController()
+17:49:53.0 (2204338)|STATEMENT_EXECUTE|[1]
+17:49:53.0 (2210798)|STATEMENT_EXECUTE|[1]
+17:49:53.0 (2245698)|HEAP_ALLOCATE|[50]|Bytes:5
+17:49:53.0 (2270652)|HEAP_ALLOCATE|[56]|Bytes:5
+17:49:53.0 (2278246)|HEAP_ALLOCATE|[64]|Bytes:7
+17:49:53.0 (2298961)|SYSTEM_MODE_ENTER|false
+17:49:53.0 (2315771)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+17:49:53.0 (2324749)|SYSTEM_MODE_EXIT|false
+17:49:53.0 (2333492)|METHOD_EXIT|[1]|CompensationsController
+17:49:53.0 (2338995)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+17:49:53.0 (2345906)|SYSTEM_MODE_ENTER|false
+17:49:53.0 (2352417)|VARIABLE_SCOPE_BEGIN|[5]|contactRecordId|String|false|false
+17:49:53.0 (2373987)|VARIABLE_ASSIGNMENT|[5]|contactRecordId|null
+17:49:53.0 (2379338)|VARIABLE_SCOPE_BEGIN|[5]|recordType|String|false|false
+17:49:53.0 (2392464)|VARIABLE_ASSIGNMENT|[5]|recordType|"Study"
+17:49:53.0 (2405132)|HEAP_ALLOCATE|[7]|Bytes:5
+17:49:53.0 (2410039)|STATEMENT_EXECUTE|[5]
+17:49:53.0 (2412302)|STATEMENT_EXECUTE|[7]
+17:49:53.0 (2415178)|HEAP_ALLOCATE|[7]|Bytes:1
+17:49:53.0 (2429021)|HEAP_ALLOCATE|[7]|Bytes:10
+17:49:53.0 (2478210)|USER_DEBUG|[7]|DEBUG|null Study
+17:49:53.0 (2489652)|STATEMENT_EXECUTE|[9]
+17:49:53.0 (2492996)|HEAP_ALLOCATE|[9]|Bytes:171
+17:49:53.0 (2500321)|VARIABLE_SCOPE_BEGIN|[9]|squery|String|false|false
+17:49:53.0 (2515396)|VARIABLE_ASSIGNMENT|[9]|squery|"SELECT Id, Name, Con (151 more) ..."
+17:49:53.0 (2521252)|STATEMENT_EXECUTE|[15]
+17:49:53.0 (2524402)|HEAP_ALLOCATE|[16]|Bytes:3
+17:49:53.0 (2544871)|STATEMENT_EXECUTE|[16]
+17:49:53.0 (2546801)|STATEMENT_EXECUTE|[17]
+17:49:53.0 (2549261)|HEAP_ALLOCATE|[17]|Bytes:32
+17:49:53.0 (2553300)|HEAP_ALLOCATE|[17]|Bytes:1
+17:49:53.0 (2558946)|HEAP_ALLOCATE|[17]|Bytes:38
+17:49:53.0 (2566278)|HEAP_ALLOCATE|[17]|Bytes:209
+17:49:53.0 (2575758)|VARIABLE_ASSIGNMENT|[17]|squery|"SELECT Id, Name, Con (189 more) ..."
+17:49:53.0 (2580507)|STATEMENT_EXECUTE|[20]
+17:49:53.0 (2592382)|USER_DEBUG|[20]|DEBUG|SELECT Id, Name, Contact__r.Name,Contact__r.Birthdate,Job_Category__c,RecordType.DeveloperName,Amount__c,Location__c,Office__c,Submitted__c,Status__C FROM Compensation__c where RecordType.DeveloperName='Study'
+17:49:53.0 (2603950)|STATEMENT_EXECUTE|[21]
+17:49:53.0 (3552815)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Name, Contact__r.Name,Contact__r.Birthdate,Job_Category__c,RecordType.DeveloperName,Amount__c,Location__c,Office__c,Submitted__c,Status__C FROM Compensation__c where RecordType.DeveloperName='Study'
+17:49:53.0 (11313239)|SOQL_EXECUTE_END|[21]|Rows:1
+17:49:53.0 (11337864)|HEAP_ALLOCATE|[21]|Bytes:8
+17:49:53.0 (11363476)|HEAP_ALLOCATE|[21]|Bytes:388
+17:49:53.0 (11448667)|HEAP_ALLOCATE|[21]|Bytes:8
+17:49:53.0 (11473609)|VARIABLE_SCOPE_BEGIN|[21]|returnList|List<Compensation__c>|true|false
+17:49:53.0 (11548877)|VARIABLE_ASSIGNMENT|[21]|returnList|[{"Id":"a06f200000XDLXfAAP","Name":"Study 1","Contact__c":"003f200002Ps5aKAAR","Job_Category__c":"Senior","RecordTypeId":"012f2000000qOq1AAE","Amount__c":"2000","Location__c":"US","Office__c":"Michigan","Submitted__c":false,"Status__c":"NOT SUBMITTED","Contact__r":{"Name":"Gabrielsssssssss Arc (1 more) ...","Birthdate":"1978-06-14T00:00:00.000Z","Id":"003f200002Ps5aKAAR"},"RecordType":{"DeveloperName":"Study","Id":"012f2000000qOq1AAE"}}]|0x839e450
+17:49:53.0 (11562560)|STATEMENT_EXECUTE|[25]
+17:49:53.0 (11574206)|SYSTEM_MODE_EXIT|false
+17:49:53.11 (11603740)|CUMULATIVE_LIMIT_USAGE
+17:49:53.11 (11603740)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:49:53.11 (11603740)|CUMULATIVE_LIMIT_USAGE_END
+
+17:49:53.0 (11634873)|CODE_UNIT_FINISHED|CompensationsController.getCompensations(String, String)
+17:49:53.0 (11735507)|CODE_UNIT_FINISHED|Aura
+17:49:53.0 (13078247)|EXECUTION_FINISHED

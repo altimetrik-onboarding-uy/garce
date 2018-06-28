@@ -1,0 +1,93 @@
+43.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+17:47:30.0 (121265)|USER_INFO|[EXTERNAL]|005f2000008Qgef|gabriel.arce@salesforce.com|Argentine Time|GMT-03:00
+17:47:30.0 (349555)|EXECUTION_STARTED
+17:47:30.0 (356565)|CODE_UNIT_STARTED|[EXTERNAL]|Aura
+17:47:30.0 (1532645)|HEAP_ALLOCATE|[72]|Bytes:3
+17:47:30.0 (1621508)|HEAP_ALLOCATE|[77]|Bytes:152
+17:47:30.0 (1650028)|HEAP_ALLOCATE|[342]|Bytes:408
+17:47:30.0 (1675786)|HEAP_ALLOCATE|[355]|Bytes:408
+17:47:30.0 (1695462)|HEAP_ALLOCATE|[467]|Bytes:48
+17:47:30.0 (1739930)|HEAP_ALLOCATE|[139]|Bytes:6
+17:47:30.0 (1767291)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:3
+17:47:30.0 (1803529)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:3
+17:47:30.0 (2714954)|CODE_UNIT_STARTED|[EXTERNAL]|01pf2000002PUqf|CompensationsController.getCompensations(String, String)
+17:47:30.0 (2836077)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:7
+17:47:30.0 (2844721)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:47:30.0 (2874889)|METHOD_ENTRY|[1]|01pf2000002PUqf|CompensationsController.CompensationsController()
+17:47:30.0 (2883917)|STATEMENT_EXECUTE|[1]
+17:47:30.0 (2889404)|STATEMENT_EXECUTE|[1]
+17:47:30.0 (2927145)|HEAP_ALLOCATE|[50]|Bytes:5
+17:47:30.0 (2947192)|HEAP_ALLOCATE|[56]|Bytes:5
+17:47:30.0 (2956398)|HEAP_ALLOCATE|[64]|Bytes:7
+17:47:30.0 (2976985)|SYSTEM_MODE_ENTER|false
+17:47:30.0 (3115346)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+17:47:30.0 (3128098)|SYSTEM_MODE_EXIT|false
+17:47:30.0 (3156403)|METHOD_EXIT|[1]|CompensationsController
+17:47:30.0 (3165321)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:3
+17:47:30.0 (3178575)|SYSTEM_MODE_ENTER|false
+17:47:30.0 (3187139)|VARIABLE_SCOPE_BEGIN|[5]|contactRecordId|String|false|false
+17:47:30.0 (3216862)|VARIABLE_ASSIGNMENT|[5]|contactRecordId|null
+17:47:30.0 (3226698)|VARIABLE_SCOPE_BEGIN|[5]|recordType|String|false|false
+17:47:30.0 (3245837)|VARIABLE_ASSIGNMENT|[5]|recordType|"All"
+17:47:30.0 (3260471)|HEAP_ALLOCATE|[7]|Bytes:5
+17:47:30.0 (3269456)|STATEMENT_EXECUTE|[5]
+17:47:30.0 (3272261)|STATEMENT_EXECUTE|[7]
+17:47:30.0 (3275963)|HEAP_ALLOCATE|[7]|Bytes:1
+17:47:30.0 (3290087)|HEAP_ALLOCATE|[7]|Bytes:8
+17:47:30.0 (3370123)|USER_DEBUG|[7]|DEBUG|null All
+17:47:30.0 (3407607)|STATEMENT_EXECUTE|[9]
+17:47:30.0 (3412082)|HEAP_ALLOCATE|[9]|Bytes:171
+17:47:30.0 (3422240)|VARIABLE_SCOPE_BEGIN|[9]|squery|String|false|false
+17:47:30.0 (3446453)|VARIABLE_ASSIGNMENT|[9]|squery|"SELECT Id, Name, Con (151 more) ..."
+17:47:30.0 (3455288)|STATEMENT_EXECUTE|[15]
+17:47:30.0 (3460358)|HEAP_ALLOCATE|[16]|Bytes:3
+17:47:30.0 (3481719)|STATEMENT_EXECUTE|[16]
+17:47:30.0 (3484236)|STATEMENT_EXECUTE|[20]
+17:47:30.0 (3499660)|USER_DEBUG|[20]|DEBUG|SELECT Id, Name, Contact__r.Name,Contact__r.Birthdate,Job_Category__c,RecordType.DeveloperName,Amount__c,Location__c,Office__c,Submitted__c,Status__C FROM Compensation__c 
+17:47:30.0 (3515837)|STATEMENT_EXECUTE|[21]
+17:47:30.0 (4330344)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Name, Contact__r.Name,Contact__r.Birthdate,Job_Category__c,RecordType.DeveloperName,Amount__c,Location__c,Office__c,Submitted__c,Status__C FROM Compensation__c 
+17:47:30.0 (13283696)|SOQL_EXECUTE_END|[21]|Rows:12
+17:47:30.0 (13329878)|HEAP_ALLOCATE|[21]|Bytes:52
+17:47:30.0 (13440992)|HEAP_ALLOCATE|[21]|Bytes:3535
+17:47:30.0 (13586711)|HEAP_ALLOCATE|[21]|Bytes:52
+17:47:30.0 (13631455)|VARIABLE_SCOPE_BEGIN|[21]|returnList|List<Compensation__c>|true|false
+17:47:30.0 (13689357)|VARIABLE_ASSIGNMENT|[21]|returnList|"List of size 12 too large to display"|0x1464cb92
+17:47:30.0 (13725369)|STATEMENT_EXECUTE|[25]
+17:47:30.0 (13745050)|SYSTEM_MODE_EXIT|false
+17:47:30.13 (13786673)|CUMULATIVE_LIMIT_USAGE
+17:47:30.13 (13786673)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 12 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:47:30.13 (13786673)|CUMULATIVE_LIMIT_USAGE_END
+
+17:47:30.0 (13837470)|CODE_UNIT_FINISHED|CompensationsController.getCompensations(String, String)
+17:47:30.0 (14263391)|CODE_UNIT_FINISHED|Aura
+17:47:30.0 (15457283)|EXECUTION_FINISHED
+ber of query rows: 3 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:47:30.11 (11254960)|CUMULATIVE_LIMIT_USAGE_END
+
+17:47:30.0 (11287195)|CODE_UNIT_FINISHED|CompensationsController.getRecordTypes()
+17:47:30.0 (11357679)|CODE_UNIT_FINISHED|Aura
+17:47:30.0 (12547520)|EXECUTION_FINISHED
