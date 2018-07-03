@@ -5,4 +5,5 @@
     <tab>Reports_Dashboard</tab>
     <tab>standard-Contact</tab>
     <tab>Compensation__c</tab>
+    <tab>Employee_Compensations</tab>
 </CustomApplication>
