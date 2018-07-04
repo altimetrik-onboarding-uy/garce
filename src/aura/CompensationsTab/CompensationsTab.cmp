@@ -1,56 +1,106 @@
-<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,force:hasRecordId" controller="CompensationsController" access="global" >
-	 <head>
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,force:hasRecordId" controller="CompensationsController"
+    access="global">
+
+    <head>
         <title>This will display all the compensations in the org.</title>
     </head>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
     <aura:attribute name="compensations" type="List" />
+    <aura:attribute name="selectedCompensations" type="List" />
     <aura:attribute name="options" type="List" />
-    <aura:attribute name="selectedValue" type="String" default="Red"/>
-    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="submOptions" type="List" default="[
+    {'label': 'All', 'value': 'All'},
+    {'label': 'Submitted', 'value': 'true'},
+    {'label': 'Unsubmitted', 'value': 'false'},
+    ]" />
+    <aura:attribute name="selectedValue" type="String" default='All' />
+    <aura:attribute name="submittedValue" type="String" default='All' />
+    <aura:handler name="selectcompensation" event="c:eventSelect" action="{!c.handleSelectCompensation}" />
 
-    <aura:handler name="onSaveSuccess" event="force:recordSaveSuccess" action="{!c.handleSaveSuccess}"/>
 
-    <div class="container">
 
-            <lightning:card title="Compensations">
-         <p class="slds-p-horizontal--small">
-                <lightning:select name="recordTypeSelect" label="Filter by Type" onchange="{!c.filterTable}" value="{!v.selectedValue}"> 
-                        <aura:iteration items="{!v.options}" var="item">
-                                <option text="{!item}" value="{!item}" />
+
+    <div class="slds-container">
+
+        <lightning:card title="Compensations">
+            <div class="slds-card__header slds-grid ">
+                <div class="slds-size_2-of-12">
+                    <lightning:combobox name="recordTypeSelect" label="Filter by Type" options="{!v.options}" onchange="{!c.filterTable}" value="{!v.selectedValue}">
+
+                    </lightning:combobox>
+                </div>
+                <div class="slds-size_2-of-12 slds-m-left_small">
+                    <lightning:combobox name="submittedSelect" label="Submitted ?" options="{!v.submOptions}" onchange="{!c.filterTable}" value="{!v.submittedValue}">
+                    </lightning:combobox>
+                </div>
+                <div class="slds-size_8-of-12 slds-grid ">
+                    <div class="slds-col_bump-left">
+                        <button class="slds-button slds-button_destructive " onclick="{!c.sendtoSubmitt}">Submit</button>
+                    </div>
+                    <div class="slds-m-left_small">
+                            <button class="slds-button slds-button_destructive " onclick="{!c.downloadCsv}">Download CSV</button>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="slds-card__body_inner">
+
+                <table class="slds-table slds-table--bordered slds-table--striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">
+                                <span class="slds-truncate">Name</span>
+                            </th>
+
+                            <th scope="col">
+                                <span class="slds-truncate">Employee's name</span>
+                            </th>
+                            <th scope="col">
+                                <span class="slds-truncate">Employee's date of birth</span>
+                            </th>
+                            <th scope="col">
+                                <span class="slds-truncate">Job Category</span>
+                            </th>
+                            <th scope="col">
+                                <span class="slds-truncate">Compensation Type</span>
+                            </th>
+                            <th scope="col">
+                                <span class="slds-truncate">Amount</span>
+                            </th>
+                            <th scope="col">
+                                <span class="slds-truncate">Location</span>
+                            </th>
+                            <th scope="col">
+                                <span class="slds-truncate">Office</span>
+                            </th>
+                            <th scope="col">
+                                <span class="slds-truncate">Submitted</span>
+                            </th>
+                            <th scope="col">
+                                <span class="slds-truncate">Status</span>
+                            </th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <aura:iteration items="{!v.compensations}" var="compensation">
+                            <tr>
+                                <c:compensationEdit compensation="{!compensation}" />
+
+
+                            </tr>
                         </aura:iteration>
-                        </lightning:select> 
-        </p>
-         
-    </lightning:card>
-           
-    </div>
-    <div class="slds"> 
+                    </tbody>
+                </table>
 
-    <table class="slds-table slds-table--bordered slds-table--striped">
-        <thead>
-            <tr>
-                <th scope="col"><span class="slds-truncate">Name</span></th>
-               
-               <th scope="col"><span class="slds-truncate">Employee's name</span></th>
-                <th scope="col"><span class="slds-truncate">Employee's date of birth</span></th>
-                <th scope="col"><span class="slds-truncate">Job Category</span></th>
-                <th scope="col"><span class="slds-truncate">Compensation Type</span></th>
-                <th scope="col"><span class="slds-truncate">Amount</span></th>
-                <th scope="col"><span class="slds-truncate">Location</span></th>
-                <th scope="col"><span class="slds-truncate">Office</span></th>
-                <th scope="col"><span class="slds-truncate">Submitted</span></th>
-                <th scope="col"><span class="slds-truncate">Status</span></th>
-              
-            </tr>
-        </thead>
-        <tbody>
-            <aura:iteration items="{!v.compensations}" var="compensation">
-                <tr>
-                   <c:compensationEdit compensation="{!compensation}"/>
-                
-                  
-                </tr> 
-            </aura:iteration>
-        </tbody>
-    </table>
-        </div>
+
+            </div>
+
+        </lightning:card>
+
+    </div>
+
 </aura:component>

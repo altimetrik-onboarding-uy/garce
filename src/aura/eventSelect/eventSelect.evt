@@ -1,0 +1,4 @@
+<aura:event type="COMPONENT">
+    <aura:attribute name="compensation" type="Compensation__c"/>
+    <aura:attribute name="add" type="boolean"/>
+</aura:event>
