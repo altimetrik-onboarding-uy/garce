@@ -1,31 +1,54 @@
-<aura:component implements="flexipage:availableForAllPageTypes,force:appHostable" access="global" >
-    <aura:attribute name="compensation" type="Compensation__c" required="false"  />
-    
-    <aura:handler name="onSaveSuccess" event="force:recordSaveSuccess" action="{!c.handleSaveSuccess}"/>
+<aura:component implements="flexipage:availableForAllPageTypes,force:appHostable" access="global">
+                <aura:attribute name="compensation" type="Compensation__c" required="false" />
 
-    
-    <td scope="col"><span class="slds-truncate">{!v.compensation.Name}</span></td>
-    <td scope="col"><span class="slds-truncate">
-            <lightning:button variant="base" label="{!v.compensation.Contact__r.Name}" title="Base action" onclick="{!c.edit}"/>
-        
+                <aura:registerEvent name="selectcompensation" type="c:eventSelect"/>
+       
+        <td scope="col">
+                <span class="slds-truncate">{!v.compensation.Name}</span>
+        </td>
+        <td scope="col">
+                <span class="slds-truncate">
+                        <lightning:button variant="base" label="{!v.compensation.Contact__r.Name}" title="Base action" onclick="{!c.edit}" />
 
-    </span></td>
- 
-   <td scope="col"><span class="slds-truncate">
-        <lightning:formattedDateTime value="{!v.compensation.Contact__r.Birthdate}" year="numeric" day="2-digit" month="long"/>
-    </span></td>  
-    <td scope="col"><span class="slds-truncate">{!v.compensation.Job_Category__c}</span></td>
-    <td scope="col"><span class="slds-truncate">{!v.compensation.RecordType.DeveloperName }</span></td>
-    <td scope="col"><span class="slds-truncate">{!v.compensation.Amount__c}</span></td>
-    <td scope="col"><span class="slds-truncate">{!v.compensation.Location__c}</span></td>
-    <td scope="col"><span class="slds-truncate">{!v.compensation.Office__c}</span></td>
-    <td scope="col">
-            <ui:outputCheckbox       value="{!v.compensation.Submitted__c}"/>
 
-    </td>
-    <td scope="col"><span class="slds-truncate">{!v.compensation.Status__c}</span></td>
-    
-    
-    
-   
+                </span>
+        </td>
+
+        <td scope="col">
+                <span class="slds-truncate">
+                        <lightning:formattedDateTime value="{!v.compensation.Contact__r.Birthdate}" year="numeric" day="2-digit" month="long" />
+                </span>
+        </td>
+        <td scope="col">
+                <span class="slds-truncate">{!v.compensation.Job_Category__c}</span>
+        </td>
+        <td scope="col">
+                <span class="slds-truncate">{!v.compensation.RecordType.DeveloperName }</span>
+        </td>
+        <td scope="col">
+                <span class="slds-truncate">{!v.compensation.Amount__c}</span>
+        </td>
+        <td scope="col">
+                <span class="slds-truncate">{!v.compensation.Location__c}</span>
+        </td>
+        <td scope="col">
+                <span class="slds-truncate">{!v.compensation.Office__c}</span>
+        </td>
+        <td scope="col">
+                <aura:if isTrue="{#v.compensation.Submitted__c}">
+                                        <ui:outputCheckbox value="{!v.compensation.Submitted__c}" />
+                                        <aura:set attribute="else">
+                                                        <ui:inputCheckbox aura:id="selectionCheck" value="{!v.compensation.Submitted__c}" click="{!c.selectCompensation}" />
+                                        </aura:set>
+                                    </aura:if>
+                
+
+        </td>
+        <td scope="col">
+                <span class="slds-truncate">{!v.compensation.Status__c}</span>
+        </td>
+
+
+
+
 </aura:component>

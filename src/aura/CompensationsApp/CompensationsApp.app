@@ -1,4 +1,4 @@
 <aura:application extends="force:slds" >
-    <c:CompensationsTab/>
+    <c:prueba/>
  
 </aura:application>
